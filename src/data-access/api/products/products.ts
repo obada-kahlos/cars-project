@@ -27,23 +27,25 @@ export interface ProductType {
 const extendedApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getProductsList: builder.query({
-      query: ({ type }) => ({
+      query: () => ({
         url: ``,
         method: "POST",
         body: {
           query: `
-                    query MyQuery{
-                        products(where: {type: {_eq: ${type}} , status : {_eq: true }}) {
+                   query getAllCars {
+                        cars(order_by :{created_at : asc}){
+                          created_at
                           description
-                          discount
                           id
-                          url1
                           name
                           price
-                          type
-                          age
+                          url1
+                          url2
+                          url3
+                          url4
+                          url5
                         }
-                      }                  
+                      }            
                     `,
         },
       }),
@@ -51,13 +53,10 @@ const extendedApi = apiSlice.injectEndpoints({
         const laptopList = response?.data?.products.map((obj) => {
           return {
             description: obj?.description,
-            discount: obj?.discount,
             id: obj?.id,
             image: obj?.url1,
             name: obj?.name,
             price: obj?.price,
-            type: obj?.type,
-            age: obj?.age,
           };
         });
 
@@ -129,19 +128,17 @@ const extendedApi = apiSlice.injectEndpoints({
         body: {
           query: `
                     query MyQuery {
-                        products(where: {id: {_eq: "${id}"}}){
+                        cars(where: {id: {_eq: "${id}"}}){
+                          created_at
                           description
-                          discount
                           id
+                          name
+                          price
                           url1
                           url2
                           url3
                           url4
                           url5
-                          price
-                          type
-                          name
-                          age
                         }
                       }
                                        
@@ -167,23 +164,25 @@ const extendedApi = apiSlice.injectEndpoints({
       }),
     }),
     getAllProductsList: builder.query({
-      query: ({ product_type }) => ({
+      query: () => ({
         url: ``,
         method: "POST",
         body: {
           query: `
-                    query MyQuery {
-                        products(where: {type: {_eq: ${product_type}}}){
+                   query getAllCars {
+                        cars(order_by :{created_at : asc}){
+                          created_at
                           description
-                          discount
                           id
-                          url1
                           name
                           price
-                          type
-                          age
+                          url1
+                          url2
+                          url3
+                          url4
+                          url5
                         }
-                      }                  
+                      }                 
                     `,
         },
       }),
@@ -191,13 +190,10 @@ const extendedApi = apiSlice.injectEndpoints({
         const laptopList = response?.data?.products.map((obj) => {
           return {
             description: obj?.description,
-            discount: obj?.discount,
             id: obj?.id,
             image: obj?.url1,
             name: obj?.name,
             price: obj?.price,
-            type: obj?.type,
-            age: obj?.age,
           };
         });
         return laptopList;

@@ -7,18 +7,16 @@ import {
 } from "@/data-access/api/products/products";
 
 import { useAppSelector, useAppDispatch } from "@/store";
-import { selectLaptopListList } from "@/data-access/slices/product-list";
-import { LaptopList } from "../laptop-list";
+import { selectCarsListList } from "@/data-access/slices/product-list";
+import { ProductsList } from "../laptop-list";
 import { selectAccessoryListList } from "@/data-access/slices/Accessory-list";
 
 interface ProductList {
   description?: string;
-  discount?: string;
   id?: string;
   image?: string;
   name?: string;
   price?: string;
-  type?: string;
 }
 
 export interface ProductType {
@@ -60,7 +58,7 @@ export const AllProductPage = ({ productType, title }: { productType: string, ti
 
 
   let selectedLaptopListList: ProductList[] = useAppSelector((state) =>
-    selectLaptopListList(state)
+    selectCarsListList(state)
   );
 
   // const { isLoading: isLoadingAccessory } = useGetAccessoryListQuery({});
@@ -95,7 +93,7 @@ export const AllProductPage = ({ productType, title }: { productType: string, ti
             : "من الاغلى الى الارخص"}
         </span>
       </div>
-      <LaptopList
+      <ProductsList
         title={title}
         dollarPrice={dollar}
         isLoading={isLoadingLaptop}

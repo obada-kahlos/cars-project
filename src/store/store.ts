@@ -1,5 +1,5 @@
 import { apiSlice } from "@/data-access/api/api";
-import { laptopList } from "@/data-access/slices/product-list";
+import { carsList } from "@/data-access/slices/product-list";
 import { accessoryList } from "@/data-access/slices/Accessory-list";
 
 import { configureStore } from "@reduxjs/toolkit";
@@ -10,7 +10,7 @@ import { searchList } from "@/data-access/slices/search-list";
 export const store = configureStore({
   reducer: {
     [apiSlice.reducerPath]: apiSlice.reducer,
-    laptopList,
+    carsList,
     accessoryList,
     allProductsList,
     productsTypeList,

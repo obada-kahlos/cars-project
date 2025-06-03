@@ -1,15 +1,16 @@
-import type { InitialStateInterface } from '@/util/list/typed-slice';
-import { listSlice } from '@/util/list/list.slice';
-import type { ListInterface } from '@/util/list/list.slice';
+import type { InitialStateInterface } from "@/util/list/typed-slice";
+import { listSlice } from "@/util/list/list.slice";
+import type { ListInterface } from "@/util/list/list.slice";
 
 export const {
-    setItemList: setLaptopListItemList,
-    addItem: addLaptopListItem,
-    resetItemList: resetLaptopList,
-    removeItem: removeLaptopListItem
-} = listSlice('laptop-list').actions;
+  setItemList: setCarsListItemList,
+  addItem: addCarsListItem,
+  resetItemList: resetCarsList,
+  removeItem: removeCarsListItem,
+} = listSlice("cars-list").actions;
 
-export const selectLaptopListList = (state: { laptopList: InitialStateInterface<ListInterface> }) =>
-    state.laptopList.response.listItemList;
+export const selectCarsListList = (state: {
+  CarsList: InitialStateInterface<ListInterface>;
+}) => state.CarsList.response.listItemList;
 
-export const laptopList = listSlice('laptop-list').reducer;
+export const carsList = listSlice("cars-list").reducer;

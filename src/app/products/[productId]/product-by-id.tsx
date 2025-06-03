@@ -125,7 +125,7 @@ export const ProductById = ({ id }: { id: string }) => {
             </div>
           </div>
         ))
-        : data?.data?.products?.map((productItem: ProductList, key: number) => {
+        : data?.data?.cars?.map((productItem: ProductList, key: number) => {
           return (
             <div key={key}>
               <div className="grid grid-cols-12 gap-8">
@@ -139,29 +139,10 @@ export const ProductById = ({ id }: { id: string }) => {
                         <span className="font-[700]"> Laptop model : </span>
                         {productItem.name}
                       </p>
-                      <p className="text-[rgb(255,153,0)] text-[18px]">
-                        <span className="font-[700]"> Type : </span>
-                        {productItem.type}
-                      </p>
                     </div>
                     <p className="text-[16px] text-[#191919] font-[400]">
                       <span className="font-[700]"> Price : </span>
                       {Number(productItem.price) * dollar}S.P
-                    </p>
-                    <p className="text-[16px] text-[#191919] font-[400]">
-                      <span className="font-[700]"> Discount : </span>
-                      {productItem.discount ? productItem.discount : "0%"}
-                    </p>
-                    <p className="text-[16px] text-[#191919] font-[400]">
-                      <span className="font-[700]"> After discount : </span>
-                      {calculateDiscountedPrice(
-                        Number(productItem?.price?.replace(/\./g, "")),
-                        productItem.discount === ""
-                          ? Number(productItem?.discount?.replace(/\./g, ""))
-                          : 0,
-                        dollar
-                      )}
-                      S.P
                     </p>
                     <p className="text-[16px] text-[#333333] mt-2 block">
                       <span className="font-[700]"> Description : </span>

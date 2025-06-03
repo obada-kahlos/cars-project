@@ -2,7 +2,7 @@
 
 import MultipleItems from "@/components/react-slick/react-slick";
 import React, { useEffect, useState } from "react";
-import { selectLaptopListList } from "@/data-access/slices/product-list";
+import { selectCarsListList } from "@/data-access/slices/product-list";
 import { useAppSelector } from "@/store";
 import Image from "next/image";
 import CardProduct from "@/components/card/card-product";
@@ -11,16 +11,13 @@ import { Skeleton } from "@mui/material";
 
 interface ProductList {
   description?: string;
-  discount?: string;
   id?: string;
   image?: string;
   name?: string;
   price?: string;
-  type?: string;
-  age?: string;
 }
 
-export const LaptopList = ({
+export const ProductsList = ({
   isLoading,
   selectedList,
   dollarPrice,
@@ -83,22 +80,21 @@ export const LaptopList = ({
           </div>
           <div className="my-[40px]">
             <div className="grid-container">
-              {selectedList?.map((laptopItem, key) => (
+              {selectedList?.map((car, key) => (
                 <div key={key} className="grid-item">
                   <CardProduct
                     height="300px"
                     rounded="10px"
                     width="100%"
-                    image={laptopItem.image ? laptopItem.image : ""}
-                    title={laptopItem.name ? laptopItem.name : ""}
-                    price={laptopItem.price ? laptopItem.price : ""}
+                    image={car.image ? car.image : ""}
+                    title={car.name ? car.name : ""}
+                    price={car.price ? car.price : ""}
                     description={
-                      laptopItem.description ? laptopItem.description : ""
+                      car.description ? car.description : ""
                     }
                     dollarPrice={dollarPrice}
                     icons={true}
-                    id={laptopItem.id ? laptopItem.id : ""}
-                    age={laptopItem.age ? laptopItem.age : ""}
+                    id={car.id ? car.id : ""}
                   />
                 </div>
               ))}

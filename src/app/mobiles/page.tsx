@@ -1,6 +1,6 @@
 import CardAbout from "@/components/card/card-about";
 import React from "react";
-import { LaptopList } from "@/feature/laptop-list";
+import { ProductsList } from "@/feature/laptop-list";
 import { AccessoryList } from "@/feature/Accessory-list";
 import { Hero } from "@/components/hero";
 import { AllProductPage } from "@/feature/all-products-list";

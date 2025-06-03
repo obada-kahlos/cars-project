@@ -58,19 +58,6 @@ const CardProduct = ({
                 معلومات المنتج
               </span>
             </Link>
-            {age === "جديد" ? (
-              <span className="inline-block bg-main_color rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
-                جديد
-              </span>
-            ) : age === "مستعمل" ? (
-              <span className="inline-block bg-[#23af23] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
-                مستعمل
-              </span>
-            ) : (
-              <span className="inline-block bg-[#2b2bd8] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
-                اوبن بوكس
-              </span>
-            )}
           </div>
         </div>
       </a>
