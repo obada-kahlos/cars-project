@@ -10,7 +10,7 @@ export const {
 } = listSlice("cars-list").actions;
 
 export const selectCarsListList = (state: {
-  CarsList: InitialStateInterface<ListInterface>;
-}) => state.CarsList.response.listItemList;
+  carsList: InitialStateInterface<ListInterface>;
+}) => state.carsList.response.listItemList;
 
 export const carsList = listSlice("cars-list").reducer;

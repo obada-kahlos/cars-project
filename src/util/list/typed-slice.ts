@@ -1,28 +1,34 @@
-import type { SliceCaseReducers, ValidateSliceCaseReducers } from '@reduxjs/toolkit';
-import { createSlice } from '@reduxjs/toolkit';
+import type {
+  SliceCaseReducers,
+  ValidateSliceCaseReducers,
+} from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 export interface InitialStateInterface<T> {
-	isLoading: boolean;
-	response: T;
+  isLoading: boolean;
+  response: T;
 }
 
-export function createTypedSlice<T, Reducers extends SliceCaseReducers<InitialStateInterface<T>>>({
-	name = '',
-	initialState,
-	reducers,
-	extraReducers
+export function createTypedSlice<
+  T,
+  Reducers extends SliceCaseReducers<InitialStateInterface<T>>
+>({
+  name = "",
+  initialState,
+  reducers,
+  extraReducers,
 }: {
-	name: string;
-	initialState: InitialStateInterface<T>;
-	reducers: ValidateSliceCaseReducers<InitialStateInterface<T>, Reducers>;
-	extraReducers?: (builder: unknown) => void;
+  name: string;
+  initialState: InitialStateInterface<T>;
+  reducers: ValidateSliceCaseReducers<InitialStateInterface<T>, Reducers>;
+  extraReducers?: (builder: unknown) => void;
 }) {
-	return createSlice({
-		name,
-		initialState,
-		reducers: {
-			...reducers
-		},
-		extraReducers: extraReducers
-	});
+  return createSlice({
+    name,
+    initialState,
+    reducers: {
+      ...reducers,
+    },
+    extraReducers: extraReducers,
+  });
 }
