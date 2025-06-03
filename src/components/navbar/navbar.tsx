@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 left-0 w-full h-[70px] bg-white overflow-hidden shadow-md z-50">
-      <div className="container mx-auto flex justify-between items-center h-[70px]">
+      <div className="container mx-auto flex justify-end items-center h-[70px]">
         {/* <ul className="flex items-center justify-center">
           <a
             href={'/'}

@@ -68,7 +68,7 @@ export const Hero = () => {
           <h1
             className={`md:text-[45px] text-[20px] text-[#fff] font-sans mb-4 ${inter.className}`}
           >
-            Fine your car.
+            .Fined your car
           </h1>
           <div
             className="relative p-2 rounded-[12px] border-[2px] border-main_color overflow-hidden md:w-[600px] w-[80%]"
