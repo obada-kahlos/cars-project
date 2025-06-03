@@ -2,25 +2,14 @@
 
 import React, { useEffect, useState } from "react";
 import {
-  useGetAccessoryListQuery,
-  useGetAllProductsListQuery,
-  useGetAllProductsTypesListQuery,
   useGetDollarQuery,
   useGetProductsListQuery,
 } from "@/data-access/api/products/products";
 
-import {
-  selectAllProductsListList,
-  resetAllProductsList,
-} from "@/data-access/slices/all-products-list";
-
-import { Skeleton } from "@mui/material";
 import { useAppSelector, useAppDispatch } from "@/store";
-import Card from "@/components/card/card-about";
 import { selectLaptopListList } from "@/data-access/slices/product-list";
 import { LaptopList } from "../laptop-list";
 import { selectAccessoryListList } from "@/data-access/slices/Accessory-list";
-import { AccessoryList } from "../Accessory-list";
 
 interface ProductList {
   description?: string;
@@ -92,27 +81,6 @@ export const AllProductPage = ({ productType, title }: { productType: string, ti
     <>
       <div className="select-type flex items-center justify-between">
         <div className="flex gap-x-2">
-          {/* <button
-            className={`${
-              type === "Accessory" ? "type-item-active" : "type-item"
-            }`}
-            onClick={() => {
-              setType("Accessory");
-            }}
-            disabled={isLoadingLaptop}
-          >
-            أكسسوارات
-          </button> */}
-          {/* <button
-            className={` ${type === "Laptop" ? "type-item-active" : "type-item"
-              }`}
-            onClick={() => {
-              setType("Laptop");
-            }}
-            disabled={isLoadingLaptop}
-          >
-            {title}
-          </button> */}
         </div>
         <span
           className="cursor-pointer p-2 bg-main_color text-white rounded"
