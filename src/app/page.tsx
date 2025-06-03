@@ -16,45 +16,10 @@ export const viewport: Viewport = {
   userScalable: true,
 };
 
-const products = [
-  {
-    image: "/ads1.jpg",
-    title: "",
-  },
-
-  {
-    image: "/ads2.jpg",
-    title: "",
-  },
-  {
-    image: "/ads3.jpg",
-    title: "",
-  },
-  {
-    image: "/ads4.jpg",
-    title: "",
-  },
-  {
-    image: "/ads5.jpg",
-    title: "",
-  },
-  {
-    image: "/ads6.jpg",
-    title: "",
-  },
-  {
-    image: "/ads7.jpg",
-    title: "",
-  },
-  {
-    image: "/ads8.jpg",
-    title: "",
-  },
-];
 
 export const metadata = {
-  title: "Space Net For Laptop",
-  description: "سبيس نت فور لابتوب, جميع انواع الابتوبات المكتبية و الغيمنغ لابتوب و الاكسسوارات والموبايلات",
+  title: "Cars",
+  description: "Cars",
 };
 
 export default function Home() {
@@ -69,7 +34,6 @@ export default function Home() {
           جميع انواع الابتوبات و الملحقات الخاصة باللابتوب
         </span>
       </div>
-      <MultipleItems ProductList={products} />
       <AllProductPage productType="Laptop" title="لابتوبات" />
     </div>
   );

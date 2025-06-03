@@ -59,9 +59,10 @@ export const Hero = () => {
         }
       >
         <img
-          src="/back-img.jpg"
+          src="/cars-here.webp"
           alt="hereo-image"
           className="w-full object-contain"
+          style={{ mixBlendMode: "multiply" }}
         />
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-start lg:justify-center flex-col z-20 md:p-0 p-4 ">
           <h1
