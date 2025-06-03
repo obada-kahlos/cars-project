@@ -75,7 +75,7 @@ export const ProductsList = ({
               {title}
             </h2>
             <span className="text-[14px] text-[#a1a1a1] font-[400] ">
-              لابتوبات مكتبية - غيمينغ لابتوب
+              حميع انواع السيارت
             </span>
           </div>
           <div className="my-[40px]">

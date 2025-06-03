@@ -34,7 +34,7 @@ export default function Home() {
           جميع انواع الابتوبات و الملحقات الخاصة باللابتوب
         </span>
       </div>
-      <AllProductPage productType="Laptop" title="لابتوبات" />
+      <AllProductPage productType="Laptop" title="سيارات" />
     </div>
   );
 }
