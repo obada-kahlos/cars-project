@@ -26,14 +26,14 @@ export default function Home() {
   return (
     <div className="sm:container w-[90%] mx-auto mb-16 mt-8 ">
       <Hero />
-      <div className="my-[10px]">
+      {/* <div className="my-[10px]">
         <h2 className="md:text-[34px] text-[20px] text-[#2a2a2a] font-[7000]">
           التصنيفات الموجودة بالموقع
         </h2>
         <span className="text-[14px] text-[#a1a1a1] font-[400] ">
           جميع انواع الابتوبات و الملحقات الخاصة باللابتوب
         </span>
-      </div>
+      </div> */}
       <AllProductPage productType="Laptop" title="سيارات" />
     </div>
   );
