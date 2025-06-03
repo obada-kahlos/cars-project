@@ -49,8 +49,8 @@ const extendedApi = apiSlice.injectEndpoints({
                     `,
         },
       }),
-      transformResponse: (response: { data: { products: ProductList[] } }) => {
-        const laptopList = response?.data?.products.map((obj) => {
+      transformResponse: (response: { data: { cars: ProductList[] } }) => {
+        const laptopList = response?.data?.cars.map((obj) => {
           return {
             description: obj?.description,
             id: obj?.id,
@@ -186,8 +186,8 @@ const extendedApi = apiSlice.injectEndpoints({
                     `,
         },
       }),
-      transformResponse: (response: { data: { products: ProductList[] } }) => {
-        const laptopList = response?.data?.products.map((obj) => {
+      transformResponse: (response: { data: { cars: ProductList[] } }) => {
+        const laptopList = response?.data?.cars.map((obj) => {
           return {
             description: obj?.description,
             id: obj?.id,

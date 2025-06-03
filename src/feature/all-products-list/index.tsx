@@ -40,12 +40,11 @@ const sortProductsByPrice = (
 };
 
 export const AllProductPage = ({ productType, title }: { productType: string, title: string }) => {
-  const [type, setType] = useState("Laptop");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
 
   const dispatch = useAppDispatch();
 
-  const { isLoading: isLoadingLaptop } = useGetProductsListQuery({ type: productType });
+  const { isLoading: isLoadingLaptop } = useGetProductsListQuery();
 
   const { data } = useGetDollarQuery({});
   const [dollar, setDollar] = useState(0);
@@ -60,6 +59,8 @@ export const AllProductPage = ({ productType, title }: { productType: string, ti
   let selectedLaptopListList: ProductList[] = useAppSelector((state) =>
     selectCarsListList(state)
   );
+
+  console.log({ selectedLaptopListList })
 
   // const { isLoading: isLoadingAccessory } = useGetAccessoryListQuery({});
   let selectedAccessoryListList: ProductList[] = useAppSelector((state) =>
