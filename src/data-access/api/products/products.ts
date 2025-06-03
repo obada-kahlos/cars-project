@@ -1,5 +1,5 @@
 import { apiSlice } from "../api";
-import { addLaptopListItem } from "@/data-access/slices/product-list";
+import { addCarsListItem } from "@/data-access/slices/product-list";
 import { addAccessoryListItem } from "@/data-access/slices/Accessory-list";
 import {
   addAllProductsListItem,
@@ -66,7 +66,7 @@ const extendedApi = apiSlice.injectEndpoints({
         try {
           const { data } = await queryFulfilled;
           data.forEach((item) => {
-            dispatch(addLaptopListItem(item));
+            dispatch(addCarsListItem(item));
           });
         } catch {
           return;
