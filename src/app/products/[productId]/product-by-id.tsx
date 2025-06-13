@@ -21,6 +21,11 @@ interface ProductList {
   url3?: string;
   url4?: string;
   url5?: string;
+  url6?: string;
+  url7?: string;
+  url8?: string;
+  url9?: string;
+  url10?: string;
   name?: string;
   price?: string;
   type?: string;
@@ -192,6 +197,41 @@ export const ProductById = ({ id }: { id: string }) => {
                         productItem?.url5 &&
                         <div>
                           <img src={getImage(productItem?.url5, 3072)} />
+                        </div>
+                      }
+
+                      {
+                        productItem?.url6 &&
+                        <div>
+                          <img src={getImage(productItem?.url6, 3072)} />
+                        </div>
+                      }
+
+                      {
+                        productItem?.url7 &&
+                        <div>
+                          <img src={getImage(productItem?.url7, 3072)} />
+                        </div>
+                      }
+
+                      {
+                        productItem?.url8 &&
+                        <div>
+                          <img src={getImage(productItem?.url8, 3072)} />
+                        </div>
+                      }
+
+                      {
+                        productItem?.url9 &&
+                        <div>
+                          <img src={getImage(productItem?.url9, 3072)} />
+                        </div>
+                      }
+
+                      {
+                        productItem?.url10 &&
+                        <div>
+                          <img src={getImage(productItem?.url10, 3072)} />
                         </div>
                       }
 
