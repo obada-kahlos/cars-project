@@ -141,7 +141,7 @@ export const ProductById = ({ id }: { id: string }) => {
                   <div>
                     <div className="flex justify-between items-center">
                       <p className="text-[20px] text-[#191919] font-[500]">
-                        <span className="font-[700]"> Laptop model : </span>
+                        <span className="font-[700]"> Car model : </span>
                         {productItem.name}
                       </p>
                     </div>
@@ -157,7 +157,7 @@ export const ProductById = ({ id }: { id: string }) => {
                     </div>
                   </div>
                   <div className="">
-                    <a href="http://wa.me/963956958013" target="_blank">
+                    <a href="http://wa.me/963951494173" target="_blank">
                       <button className="w-[150px] rounded p-4 bg-[rgb(255,153,0)] cursor-pointer text-white flex items-center justify-center gap-2">
                         Order now <IoMdCart />
                       </button>

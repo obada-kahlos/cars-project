@@ -27,14 +27,14 @@ export const Hero = () => {
       <ul className="flex items-center gap-4 text-gray-500 dark:text-gray-400 font-medium mb-8">
         <li className="flex items-center justify-center gap-4">
           <a
-            href="http://wa.me/963956958013"
+            href="http://wa.me/963951494173"
             className="hover:underline"
           >
             WhatsApp
           </a>
           <IoLogoWhatsapp className="text-gray-500" size={20} />
         </li>
-        <li className="flex items-center justify-center gap-4">
+        {/* <li className="flex items-center justify-center gap-4">
           <a
             href="https://www.facebook.com/profile.php?id=61572406436431"
             className="hover:underline"
@@ -51,7 +51,7 @@ export const Hero = () => {
             Telegram
           </a>
           <FaTelegramPlane className="text-gray-500" size={20} />
-        </li>
+        </li> */}
       </ul>
       <div
         className={
@@ -59,7 +59,7 @@ export const Hero = () => {
         }
       >
         <img
-          src="/cars-here.jpg"
+          src="/hero.png"
           alt="hereo-image"
           className="w-full object-contain"
           style={{ mixBlendMode: "multiply" }}

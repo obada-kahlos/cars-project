@@ -32,13 +32,13 @@ export default function LocaleLayout({
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                     <li className="mb-4">
                       <a
-                        href="http://wa.me/963956958013"
+                        href="http://wa.me/963951494173"
                         className="hover:underline"
                       >
                         WhatsApp
                       </a>
                     </li>
-                    <li className="mb-4">
+                    {/* <li className="mb-4">
                       <a
                         href="https://www.facebook.com/profile.php?id=61572406436431"
                         className="hover:underline"
@@ -53,7 +53,7 @@ export default function LocaleLayout({
                       >
                         Telegram
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

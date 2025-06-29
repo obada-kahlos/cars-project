@@ -44,6 +44,11 @@ const extendedApi = apiSlice.injectEndpoints({
                           url3
                           url4
                           url5
+                          url6
+                          url7
+                          url8
+                          url9
+                          url10
                         }
                       }            
                     `,
@@ -139,6 +144,11 @@ const extendedApi = apiSlice.injectEndpoints({
                           url3
                           url4
                           url5
+                          url6
+                          url7
+                          url8
+                          url9
+                          url10
                         }
                       }
                                        
@@ -181,6 +191,11 @@ const extendedApi = apiSlice.injectEndpoints({
                           url3
                           url4
                           url5
+                          url6
+                          url7
+                          url8
+                          url9
+                          url10
                         }
                       }                 
                     `,

@@ -42,7 +42,7 @@ const Navbar = () => {
         </ul> */}
         <Link href={"/"} className="flex items-center gap-2">
           <h4 className="text-[16px] md:text-[22px] font-[700] md:text-left text-center font-sans">
-            Cars
+            Car Zone Syria
           </h4>
           <img src="/logo.png" alt="icon" width={"60px"} />
         </Link>
