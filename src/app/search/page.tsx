@@ -1,9 +1,10 @@
 import type { Viewport } from "next";
 
 export const metadata = {
-  title: "Space Net For Laptop",
-  description: "سبيس نت فو لابتوب, جميع انواع الابتوبات المكتبية و الغيمنغ لابتوب و الاكسسوارات",
+  title: "Car Zone Syria",
+  description: "وجهتك المثالية لشراء وبيع واستكشاف السيارات في سوريا. اعثر على سيارات جديدة ومستعملة، واحصل على آخر أخبار السيارات، وتواصل مع مجتمع من عشاق السيارات.",
 };
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 0.5, // Change this value to adjust the zoom level

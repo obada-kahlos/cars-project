@@ -10,9 +10,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata = {
-  title: "Space Net For Laptop",
-  description: "سبيس نت فو لابتوب, جميع انواع الابتوبات المكتبية و الغيمنغ لابتوب و الاكسسوارات",
+  title: "Car Zone Syria",
+  description: "وجهتك المثالية لشراء وبيع واستكشاف السيارات في سوريا. اعثر على سيارات جديدة ومستعملة، واحصل على آخر أخبار السيارات، وتواصل مع مجتمع من عشاق السيارات.",
 };
+
 
 export default function ProductsId({
   params,

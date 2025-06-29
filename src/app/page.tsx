@@ -18,8 +18,8 @@ export const viewport: Viewport = {
 
 
 export const metadata = {
-  title: "Cars",
-  description: "Cars",
+  title: "Car Zone Syria",
+  description: "وجهتك المثالية لشراء وبيع واستكشاف السيارات في سوريا. اعثر على سيارات جديدة ومستعملة، واحصل على آخر أخبار السيارات، وتواصل مع مجتمع من عشاق السيارات.",
 };
 
 export default function Home() {
